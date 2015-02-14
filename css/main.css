@@ -11,8 +11,8 @@ body {
 }
 
 #headerBar {
-    height: 40px;
-    position: absolute;
+    height: 60px;
+    position: fixed;
     top: 0px; 
     left: 0px;
     width: 100%;
@@ -26,13 +26,13 @@ body {
 
 h1 {
     margin: 0px;
-    padding: 10px;
+    padding: 20px;
     font-weight: normal;
     font-size: 18px;
 }
 
 #window {
-    margin-top: 40px;
+    margin-top: 60px;
     width: 100%;
     max-width: 800px;
     height: 1px;
@@ -44,12 +44,20 @@ h1 {
     margin: 40px auto;
     width:90%;
     max-width: 600px;
-    height: 500px;
     padding: 3%; 
     text-align: left;
 }
 
-
+#refresh {
+    position:fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #cef;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
 
 
 

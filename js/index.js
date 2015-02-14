@@ -15,6 +15,7 @@ function get(postfields, cback) {
 
 function getData() {
 
+    $("#refresh").css("background-color","#cef");
     var postfields = "";
     get( postfields, prepData);
 
@@ -25,6 +26,7 @@ function prepData(json) {
     var basicData = JSON.parse(json);
     var trafficLights = basicData.trafficLights;
     mainContent = "<p>Email status is "+trafficLights.email + "<br />Printing status is "+trafficLights.printing+"</p>";
+    $("#refresh").css("background-color","#cd6");
     updateMain();
     
 
@@ -47,5 +49,6 @@ function init() {
 $(document).ready( function() {
     
     init();
+    $("#refresh").on('click', getData);
 
 });
