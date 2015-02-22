@@ -70,11 +70,12 @@ tr.bigstats td {
 	line-height: 1.2em;
 }
 
-#wifi_chart {
+#wifiGraph {
 	height: 130px;
 	width:330px;
 	margin-top: 20px;
 	overflow:hidden;
+	border:none;
 }
 
 
