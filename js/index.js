@@ -15,7 +15,7 @@ function get(postfields, cback) {
 
 function getData() {
 
-    $("#refresh").css("background-color","#cef");
+    $("#refresh").addClass("fa-spin");
     var postfields = "";
     get( postfields, prepData);
 
@@ -25,10 +25,14 @@ function prepData(json) {
 
     var basicData = JSON.parse(json);
     var timeStamp = basicData.timestamp;
+    var network = basicData.network;
     
-    mainContent = "<p>"+timeStamp+"</p>";
+    mainContent = "<h2>Networks</h2>";
+    mainContent += "<p><span>"+network.auth+"</span><br /><span><b>Logins</b></span></p>";
+    mainContent += "<p><span>"+network.quarantine+"</span><br /><span><b>Quarantined</b></span></p>";
+    mainContent += "<p><span>"+network.failed+"</span><br /><span><b>Failed authentication</b></span></p>";
     
-    $("#refresh").css("background-color","#cd6");
+    $("#refresh").removeClass("fa-spin");
     updateMain();
     
 }
