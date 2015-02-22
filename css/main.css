@@ -78,4 +78,13 @@ tr.bigstats td {
 	border:none;
 }
 
+a.button {
+	display: block;
+	padding:10px;
+	background:#cd6;
+	border-radius:2px;
+	text-decoration:none;
+	text-align: center;
+	color: #333;
+}
 
