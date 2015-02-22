@@ -58,6 +58,6 @@
     <icon src="res/icon/windows-phone/icon-173-tile.png" gap:platform="winphone"   gap:role="background" />
     
     <!-- external access -->
-    <access origin="http://sussex.ac.uk" subdomains="true" /> 
+    <access origin="*" /> 
  
 </widget>
