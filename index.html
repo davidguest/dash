@@ -13,6 +13,22 @@
         <div id="refresh" class="fa fa-refresh"></div>
         <div id="main"></div>
         <iframe id="window"></iframe>
+        <div id="networks" style="display:none">
+        	<h2>Networks</h2>
+    		<iframe id="wifiGraph" src="{{netgraph}}"></iframe>
+    		<table class="stats">
+				<tr>
+					<th>Authorised</th>
+					<th>Failed</th>
+					<th>Quarantined</th>
+				</tr>
+				<tr class="bigstats">
+					<td>{{netauth}}</td>
+					<td>{{netfailed}}</td>
+					<td>{{netquarantine}}</td>
+				</tr>
+    		</table>
+        </div>
     </body>
     <script src="js/zepto.js"></script>
     <script src="js/index.js"></script>

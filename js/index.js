@@ -27,14 +27,22 @@ function prepData(json) {
     var timeStamp = basicData.timestamp;
     var network = basicData.network;
     
-    mainContent = "<h2>Networks</h2>";
-    mainContent += "<p><span>"+network.auth+"</span><br /><span><b>Logins</b></span></p>";
-    mainContent += "<p><span>"+network.quarantine+"</span><br /><span><b>Quarantined</b></span></p>";
-    mainContent += "<p><span>"+network.failed+"</span><br /><span><b>Failed authentication</b></span></p>";
+    mainContent = $("#networks").html();
+    mainContent = splice(mainContent, "{{netgraph}}", network.graph);
+    mainContent = splice(mainContent, "{{netauth}}", network.auth);
+    mainContent = splice(mainContent, "{{netfailed}}", network.failed);
+    mainContent = splice(mainContent, "{{netquarantine}}", network.quarantine);
     
     $("#refresh").removeClass("fa-spin");
     updateMain();
     
+}
+
+function splice(host, element, injection) {
+	
+	var elements = host.split(element);
+	return elements.join(injection);
+	
 }
 
 function updateMain() {
