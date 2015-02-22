@@ -20,8 +20,8 @@ body {
     margin: 0;
     text-align: center;
     overflow:hidden;
-    background:#888;
-    color: white;
+    background:#3cf;
+    color: #000;
     padding-top:15px;
 }
 
@@ -54,7 +54,7 @@ h1 {
     top: 35px;
     right: 25px;
     cursor: pointer;
-    color: #fff;
+    color: #000;
     font-size: 120%;
 }
 
@@ -62,6 +62,7 @@ table.stats {
 	border-collapse: collapse;
 	table-layout: fixed;
 	width: 300px;
+	margin-bottom:20px;
 }
 
 tr.bigstats td {
