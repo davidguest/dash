@@ -11,7 +11,7 @@ body {
 }
 
 #headerBar {
-    height: 60px;
+    height: 70px;
     position: fixed;
     top: 0px; 
     left: 0px;
@@ -20,8 +20,9 @@ body {
     margin: 0;
     text-align: center;
     overflow:hidden;
-    background:#333;
+    background:#888;
     color: white;
+    padding-top:15px;
 }
 
 h1 {
@@ -41,7 +42,7 @@ h1 {
 }
 
 #main {
-    margin: 40px auto;
+    margin: 70px auto;
     width:90%;
     max-width: 600px;
     padding: 3%; 
@@ -50,15 +51,32 @@ h1 {
 
 #refresh {
     position:fixed;
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
     background-color: #cef;
-    top: 5px;
-    right: 5px;
+    top: 25px;
+    right: 15px;
     cursor: pointer;
 }
 
+table.stats { 
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 300px;
+}
 
+tr.bigstats td {
+	font-size: 150%;
+	color: #666;
+	line-height: 1.2em;
+}
+
+#wifi_chart {
+	height: 130px;
+	width:330px;
+	margin-top: 20px;
+	overflow:hidden;
+}
 
 
