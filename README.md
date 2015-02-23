@@ -1,4 +1,2 @@
 # dash
-Phonegap build dashboard
-
-This is a test repo for making a phonegap build app.
+Feasibility study for a mobile dashboard, updating stats from a REST service. 
