@@ -1,6 +1,6 @@
-//document.addEventListener("deviceready", wakeUp, false);
 
-var url="http://www.sussex.ac.uk/its/dashboard/cachedversion";
+
+var url="http://www.sussex.ac.uk/its/dashboard/current";
 var mainContent = "";
 
 function get(postfields, cback) {
