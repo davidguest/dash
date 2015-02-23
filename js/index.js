@@ -1,6 +1,6 @@
 
 
-var url="http://www.sussex.ac.uk/its/dashboard/current";
+var url="http://www.sussex.ac.uk/its/dashboard/current?t="+Date.now();
 var mainContent = "";
 
 function get(postfields, cback) {
@@ -26,9 +26,10 @@ function prepData(json) {
     var basicData = JSON.parse(json);
     var timeStamp = basicData.timestamp;
     var network = basicData.network;
+    var wifiGraph = network.graph+"?t="+Date.now();
     
     mainContent = $("#networks").html();
-    mainContent = splice(mainContent, "{{netgraph}}", network.graph);
+    mainContent = splice(mainContent, "{{netgraph}}", wifiGraph);
     mainContent = splice(mainContent, "{{netauth}}", network.auth);
     mainContent = splice(mainContent, "{{netfailed}}", network.failed);
     mainContent = splice(mainContent, "{{netquarantine}}", network.quarantine);
